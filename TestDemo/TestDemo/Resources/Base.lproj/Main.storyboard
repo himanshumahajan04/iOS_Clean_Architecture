@@ -18,7 +18,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gzT-lu-veg">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="postCellIdentifier" rowHeight="100" id="S3c-D2-K70" customClass="PostTableViewCell" customModule="TestDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
@@ -47,6 +47,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="dLH-CU-MzI" firstAttribute="top" secondItem="4uW-hH-I74" secondAttribute="top" constant="16" id="1lD-LS-Xeg"/>
                                                 <constraint firstAttribute="trailing" secondItem="58L-33-LML" secondAttribute="trailing" constant="16" id="3ZR-qJ-03N"/>
@@ -72,7 +73,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sD1-VW-WDP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gzT-lu-veg" firstAttribute="top" secondItem="sD1-VW-WDP" secondAttribute="top" id="fvj-Eb-o2H"/>
                             <constraint firstItem="sD1-VW-WDP" firstAttribute="bottom" secondItem="gzT-lu-veg" secondAttribute="bottom" id="g8d-J5-AJy"/>
@@ -90,9 +91,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

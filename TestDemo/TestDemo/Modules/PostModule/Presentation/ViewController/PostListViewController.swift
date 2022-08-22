@@ -61,7 +61,3 @@ extension PostListViewController: PostViewModelOutput {
         }
     }
 }
-
-
-
-

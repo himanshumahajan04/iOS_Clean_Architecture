@@ -16,9 +16,7 @@ class PostServiceImpl: IPostService {
     }
 
     func fetchPostsFromNetwork(completion: @escaping (Result<[PostDataListDTO], Error>) -> Void) {
-        guard let postsURL = URL(string: "https://jsonplaceholder.typicode.com/posts") else {
-            return
-        }
-        self.networkManager.request(fromUrl: postsURL, completion: completion)
+        let request = NetworkRequest(path: "/posts", method: .get)
+        self.networkManager.request(request: request, completion: completion)
     }
 }

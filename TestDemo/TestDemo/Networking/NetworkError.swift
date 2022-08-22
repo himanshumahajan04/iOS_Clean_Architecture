@@ -8,6 +8,7 @@
 import Foundation
 
 enum NetworkError: Error {
+    case invalidRequest
     case badRequest
     case failed
     case noData
@@ -17,6 +18,7 @@ enum NetworkError: Error {
     var description: String {
         
         switch self {
+        case .invalidRequest: return "Invalid Request"
         case .badRequest: return "Bad Request"
         case .failed: return "Network Request Failed"
         case .noData: return "Response returned with no data"

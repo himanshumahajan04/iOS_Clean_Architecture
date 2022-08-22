@@ -9,7 +9,7 @@ import Foundation
 
 class PostViewModelImpl: IPostViewModel {
         
-    var outputDelegate: PostViewModelOutput?
+    weak var outputDelegate: PostViewModelOutput?
     var posts: [PostCellViewModel] = [PostCellViewModel]()
         
     private let useCase: IPostUseCase
@@ -30,9 +30,7 @@ class PostViewModelImpl: IPostViewModel {
             }
         }
     }
-    
-    // MARK: Methods
-    
+        
     private func processFetchedPosts(_ posts: [Post]) -> [PostCellViewModel] {
         var postCellViewModel = [PostCellViewModel]()
         for post in posts {

@@ -7,17 +7,13 @@
 
 import Foundation
 
-// MARK: PostViewModel Protocol
-
 protocol IPostViewModel {
     var posts: [PostCellViewModel] { get set }
     func fetchPosts()
     var outputDelegate: PostViewModelOutput? { get set }
 }
 
-// MARK: PostViewModelOutput Protocol
-
-protocol PostViewModelOutput {
+protocol PostViewModelOutput: AnyObject {
     func handleSuccess()
     func handleFailure(_ message: String)
 }
